@@ -50,6 +50,6 @@ struct multiboot_info {
     struct multiboot_tag tags[0];
 };
 
-extern multiboot_header multiboot;
-
+//extern multiboot_header multiboot;
+void init_multiboot(uint32_t magic /*eax*/, uint32_t* info /*ebx*/);
 #endif //UIAOS_BOOT_H
